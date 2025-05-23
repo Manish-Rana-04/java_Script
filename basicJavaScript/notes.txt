@@ -1,0 +1,57 @@
+"let" keyword is prefered to declare any variable instead of the "var" keyword because of the problem of js like block scope
+ and functional scope .
+
+"console.table([ ])" is used to print multiple value in table format .
+
+"use strict;" is used to treat all js code as a newer version  - Good practice .
+
+" alert (3+3)  "   it gives error in node.js but in browser it's output is 6 different syntex in node.js.
+
+**** Data type
+    1  number => 2 to power 53
+    2  bigInt
+    3  boolean = True/False
+    4  string= ""
+    5  undefined 
+    6  null=  standalone value
+    7  symbol= used for uniqueness in figma like 
+
+*** "typeof()"  print the type of parameter
+   
+   typeof(undefined)=======undefined;
+   typeof(null)============object;
+
+
+Conversion to number 
+   "55" => 55
+   "rana" => NaN (not a number)
+   true => 1 ;   false => 0
+
+conversion to boolean  
+    "" => 0
+    "rana" => 1
+    0 => false
+    1 => true
+    423 => true
+
+conversion to string 
+    33 = 33   // but now this 33 is string
+    true= true // "
+
+
+********Operation 
+
+    "3" + 3 = 33      //  number to string
+    "1" + 2 + 2 = 122   
+    2 + 2 + "1" = 41   // first perform add operation then convert result to string
+
+    +true = 1
+    +false = 0
+
+**************************
+   == equality operator and the comperasion operatoe (>= , <= ,< , > )  works different in js.
+   null>=0   =>   it gives true because it convert null to 0;
+   the output is unpredictable sometimes in such type of comperision .
+
+   "strict equalto " === is used to equality check with same data type .
+       
