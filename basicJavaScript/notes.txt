@@ -21,6 +21,16 @@
    typeof(undefined)=======undefined;
    typeof(null)============object;
 
+If val is undefined, return "undefined".
+If val is null, return "object".
+If val is a String, return "string".
+If val is a Symbol, return "symbol".
+If val is a Boolean, return "boolean".
+If val is a Number, return "number".
+If val is a BigInt, return "bigint".
+
+ (Baaki sab ) Assert: val is an Object or function object .
+
 
 Conversion to number 
    "55" => 55
@@ -54,4 +64,70 @@ conversion to string
    the output is unpredictable sometimes in such type of comperision .
 
    "strict equalto " === is used to equality check with same data type .
+
+
+Data Type Summery 
+
+data type can be converted into two data types based on how they store value and access theses  values 
+
+1 Premetive data type (7)
+     number 
+     boolean 
+     bigInt
+     string
+     null 
+     symbol
+     undefined 
+
+
+
+2 Non premetive (Reference data type )
+
+    Array
+    object
+    functions 
+
+
+Stack and Heap Memory 
+
+    all premetive datatype store value in stack 
+        which gives a copy of the stored value if called by another variable 
+        change in another variable does not affect the original value 
+
+    all non premetive use heap memory 
+        reference of original stored value is given
+        cange in new variable change the original value.
+
+
+` $()   `    STRING ************************************************************************************************
+
+        various function of string mdn pe search kr le 
+
+
+Number and Math
+ 
+   (number.toFixed(2));   =>   .ke baad utni hi value deta hai
+   (number.toPrecision(2));    =>    e ki power mai dene lagta hai 
+   (number.toLocaleString('en-IN'))  
+
+
+
+**********************Math .random important hai ye (0-1) ke beech ki koi bhi random value generate karta hai 
+
+    ek formule hai kisi bhi number ke beech value generate karne ke liye 
+     (Math.floor((Math.random() *(max-min+1))+min))
+     Math.abs   => absolute value dete hai mtlb negative ko positive kar deta hai
+     Math.round  => round figure kar deta hai.
+
+
+
+Date and time  
+
+      const currentDate=new Date()
+      const currentTime=Date.now()
+
+
+
+
+
        
